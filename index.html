@@ -12,10 +12,12 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script>
-            ScrollReveal({ reset: true });
-        </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: true
+        });
+    </script>
 </head>
 
 <body>
@@ -44,7 +46,7 @@
                         how we turn rooms into stories and spaces into cinematic experience.</p>
                 </div>
                 <div class="link-insta flex">
-                    <a href="">Follow us </a> 
+                    <a href="">Follow us </a>
                     <img src="./assets/instagram.png" alt="" width="25px">
                 </div>
             </div>
@@ -477,10 +479,18 @@
 
     <script src="./script.js"></script>
     <script>
-        ScrollReveal().reveal( 'p', { delay: 300 , interval: 200, reset: true });
-        ScrollReveal().reveal( 'h1', { delay: 500 , interval: 500, reset: true });
-        ScrollReveal().reveal( 'h3', { delay: 500 , interval: 500, reset: true });
-    
+        
+
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '30px',
+            duration: 2000,
+            reset: false
+        });
+
+        sr.reveal(`.reveal, h1, h3, h4, p, li, a`, {
+            interval: 200
+        })
     </script>
 
     <script src="./script.js"></script>
