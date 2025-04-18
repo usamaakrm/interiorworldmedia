@@ -545,6 +545,11 @@ footer {
   .copyright a{
     font-weight: 550;
   }
+
+  .question{
+    font-size: 2rem;
+    width: 80%;
+  }
 }
   .footer-item {
   h4 {
